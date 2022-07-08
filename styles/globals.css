@@ -249,38 +249,56 @@ color:darkblue;
 .banner-desc button{
   border-radius: 15px;
   padding: 10px 16px;
-  background-color: white;
-  color: red;
+  /* background-color: white; */
+  background-color:navajowhite;
+  /* color: red; */
+  color: navy;
   border: none;
   margin-top: 40px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
 }
 .banner-desc .left h3{
-  font-weight: 900;
-  font-size: 80px;
-  margin-left: 25px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: oblique;
+  font-weight: 700;
+  font-size: 60px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color:tomato
 }
 .banner-desc .left p{
-  margin:18px;
+  font-size:25px;
+  margin:8px;
+  color:tomato;
 }
 .footer-banner-image{
   position: absolute;
   /* top: -35%;
   left: 8%; */
-  top: -25%;
-  left: 25%;
+  top: -30%;
+  left: 26%;
 }
 .banner-desc .right{
-  line-height: 1.4;
+  line-height: 1.6;
 }
 .banner-desc .right h3{
-  font-weight: 800;
-  font-size: 60px;
+  font-weight: 600;
+  font-size: 35px;
 }
 .banner-desc .right p{
+  font-size: 25px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:navajowhite
+}
+
+#title{
+  margin-left: -110px;
   font-size: 18px;
+  font-family: cursive;
+  margin-bottom: 20px;
 }
 .banner-desc .right .company-desc{
   font-size: 14px;
@@ -446,9 +464,9 @@ padding: 30px 65px;
 
 .product-detail-image{
   border-radius: 15px;
-   background-color: #ebebeb;
+  background-color: #ebebeb;
 
-  width: 400px;
+  width: 300px;
   height: 400px;
   cursor: pointer;
   transition: .3s ease-in-out;
@@ -546,23 +564,33 @@ padding: 30px 65px;
 }
 .quantity-desc{
   border: 1px solid gray;
-padding: 6px;
+  padding: 6px;
+  border-radius: 2.5mm;
+  position: relative;
+  top: -4px;
 }
 .quantity-desc span{
   font-size: 16px;
-  padding: 6px 12px;
+  padding: 6px 10px;
   cursor: pointer;
+  border-radius: 2.5mm;
 }
 .quantity-desc .minus{
-  border-right: 1px solid gray;
+  /* border-right: 1px solid gray; */
   color: #f02d34;
+  border-radius: 2.5mm;
 }
 .quantity-desc .num{
+  /* border-right: 1px solid gray; */
+  border-left: 1px solid gray;
   border-right: 1px solid gray;
   font-size: 20px;
+  border-radius: 2.5mm;
 }
 .quantity-desc .plus{
+  /* border-left: 1px solid gray; */
   color: rgb(49, 168, 49);
+  border-radius: 2.5mm;
 
 }
 
@@ -661,7 +689,7 @@ margin-top: 160px;
   }
   .banner-desc .left h3{
     font-weight: 900;
-    font-size: 50px;
+    font-size: px;
     margin-left: 5px;
   }
   .banner-desc .left p{
