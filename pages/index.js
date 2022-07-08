@@ -1,11 +1,22 @@
-import { ClientError } from '@sanity/client'
 import React from 'react'
+import { ClientError } from '@sanity/client'
 import {Product, FooterBanner, HeroBanner} from '../components'
 import { client } from '../lib/client'
+import Head from 'next/head' // see comment below
 
 const Home = ({products,bannerData}) => {
   return (
     <>
+      {/* maybe get rid of this Head component and use the favicon data in the Layout component instead */}
+      <Head>
+        <link rel = 'icon' type = 'image/png' sizes = '32x32' href = '/favicon-32x32.png'/>
+        <link rel = 'icon' type = 'image/png' sizes = '16x16' href = '/favicon-16x16.png'/>
+        <link rel = 'apple-touch-icon' sizes = '180x180' href = '/apple-touch-icon.png'/>
+        <link rel = 'manifest' href = '/set.webmanifest'/>
+        {/* <link rel = 'mask-icon' href = '/savari-pinned-tab.svg'/> */}
+        <meta name = 'theme-color' content = '#ffffff' />
+
+      </Head>
       <HeroBanner heroBanner = {bannerData.length && bannerData[1]}/>
     
       <div className = "products-heading">
