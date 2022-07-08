@@ -35,7 +35,7 @@ const Home = ({products,bannerData}) => {
 }
 
 export const getServerSideProps = async () => {
-  // get all products from sanity
+  // get all products (i.e. everything where teh type = "product") from sanity
   const query = '*[_type == "product"]';
   const products = await client.fetch(query);
   // get all banners
