@@ -67,7 +67,6 @@ width: 100%;
 .logo{
   color: gray;
   font-size: 18px;
-
 }
 .cart-icon{
   font-size: 25px;
@@ -79,7 +78,7 @@ width: 100%;
   background-color: transparent;
 }
 .cart-icon:hover{
-  transform: scale(1.1,1.1);
+  transform: scale(1.25,1.25);
 }
 .cart-item-qty{
   position: absolute;
@@ -539,15 +538,16 @@ padding: 30px 65px;
   color: #f02d34;
   cursor: pointer;
   width: 200px;
-   transform: scale(1, 1);
+  transform: scale(1, 1);
   transition: transform 0.5s ease;
+  border-radius: 5px;
 }
 .buttons .add-to-cart:hover{
   transform:scale(1.1,1.1)
 }
 .buttons .buy-now{
   width: 200px;
-
+  border-radius: 5px;
   padding: 10px 20px;
   background-color: #f02d34;
   color: white;
@@ -565,7 +565,7 @@ padding: 30px 65px;
 .quantity-desc{
   border: 1px solid gray;
   padding: 6px;
-  border-radius: 2.5mm;
+  border-radius: 5px;
   position: relative;
   top: -4px;
 }
@@ -573,35 +573,33 @@ padding: 30px 65px;
   font-size: 16px;
   padding: 6px 10px;
   cursor: pointer;
-  border-radius: 2.5mm;
+  /* border-radius: 2.5mm; */
 }
 .quantity-desc .minus{
   /* border-right: 1px solid gray; */
   color: #f02d34;
-  border-radius: 2.5mm;
+  /* border-radius: 2.5mm; */
 }
 .quantity-desc .num{
   /* border-right: 1px solid gray; */
   border-left: 1px solid gray;
   border-right: 1px solid gray;
   font-size: 20px;
-  border-radius: 2.5mm;
+  border-radius: 4px;
 }
 .quantity-desc .plus{
   /* border-left: 1px solid gray; */
   color: rgb(49, 168, 49);
-  border-radius: 2.5mm;
-
+  /* border-radius: 2.5mm; */
 }
 
 .maylike-products-wrapper{
-  margin-top: 120px;
+  margin-top: 50px;
 }
 .maylike-products-wrapper h2{
   text-align: center;
   margin: 50px;
   color: #324d67;
-
   font-size: 28px;
 }
 .maylike-products-container{
@@ -617,12 +615,11 @@ padding: 30px 65px;
 .success-wrapper, .cancel-wrapper{
   background-color: white;
   min-height: 60vh;
-
 }
 .success, .cancel{
   width: 1000px;
-margin: auto;
-margin-top: 160px;
+  margin: auto;
+  margin-top: 160px;
   background-color: #dcdcdc;
   padding: 50px;
   border-radius: 15px;
@@ -644,7 +641,7 @@ margin-top: 160px;
   color:#324d67;
 }
 .success .email-msg{
-   font-size: 16px;
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
@@ -733,7 +730,7 @@ margin-top: 160px;
   }
   .cart-container{
     width: 415px;
-  padding: 4px;
+    padding: 4px;
   }
   .cart-heading{
     margin-top: 35px;
