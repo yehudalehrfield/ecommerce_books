@@ -10,6 +10,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar-container'>
+      {/* Site name and logo */}
       <p className='logo'>
         <Link href = "/">Books For Bucks</Link>
       </p>
@@ -18,8 +19,10 @@ const Navbar = () => {
       <button className='cart-icon' onClick={() => setShowCart(true)}>
         <AiOutlineShopping/>
         <span className='cart-item-qty'>{totalQuantities}</span>
+        {/* <button className='cart-item-qty-btn'>{totalQuantities}</button> */}
       </button>
 
+      {/* open the cart if showCart = true (i.e. icon was clicked on) */}
       {showCart && <Cart />}
 
     </div>

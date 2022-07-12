@@ -80,10 +80,10 @@ width: 100%;
 .cart-icon:hover{
   transform: scale(1.25,1.25);
 }
-.cart-item-qty{
+.cart-item-qty{ /*NOT USING THIS*/
   position: absolute;
   right: -8px;
-  font-size: 12px;
+  font-size: 11px;
   color: #eee;
   background-color: #f02d34;
   width: 18px;
@@ -91,7 +91,22 @@ width: 100%;
   border-radius: 50%;
   text-align: center;
   font-weight: 600;
-
+  /* display: inline-block;
+  vertical-align:bottom;
+  line-height: normal; */
+}
+.cart-item-qty-btn{
+  position: absolute;
+  right: -8px;
+  font-size: 11px;
+  color: #eee;
+  background-color: #f02d34;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  border: none;
 }
 .products-container{
   display: flex;
@@ -567,11 +582,11 @@ padding: 30px 65px;
   padding: 6px;
   border-radius: 5px;
   position: relative;
-  top: -4px;
+  bottom:4px;
 }
 .quantity-desc span{
   font-size: 16px;
-  padding: 6px 10px;
+  padding: 6px 5px;
   cursor: pointer;
   /* border-radius: 2.5mm; */
 }
@@ -579,6 +594,9 @@ padding: 30px 65px;
   /* border-right: 1px solid gray; */
   color: #f02d34;
   /* border-radius: 2.5mm; */
+  position: relative;
+  top: 2px;
+  right: 3spx;
 }
 .quantity-desc .num{
   /* border-right: 1px solid gray; */
@@ -586,13 +604,39 @@ padding: 30px 65px;
   border-right: 1px solid gray;
   font-size: 20px;
   border-radius: 4px;
+  padding: 7px 10px;
 }
 .quantity-desc .plus{
   /* border-left: 1px solid gray; */
   color: rgb(49, 168, 49);
   /* border-radius: 2.5mm; */
+  position: relative;
+  top:2px;
+  left: 3px
 }
-
+.quantity-desc .minus-new{
+  /* border-right: 1px solid gray; */
+  color: #f02d34;
+  /* border-radius: 2.5mm; */
+  border: none;
+  background-color: transparent;
+}
+.quantity-desc .num-new{
+  border: 1px solid gray;
+  font-size: 20px;
+  border-radius: 4px;
+  position: relative;
+  top: -6px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.quantity-desc .plus-new{
+  /* border-left: 1px solid gray; */
+  color: rgb(49, 168, 49);
+  /* border-radius: 2.5mm; */
+  border: none;
+  background-color: transparent;
+}
 .maylike-products-wrapper{
   margin-top: 50px;
 }

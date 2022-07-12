@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const Layout = ({children}) => {
   return (
-    <div classNAme = 'layout'>
+    <div className = 'layout'>
       <Head>
         <title>Books For Bucks</title>
       </Head>
