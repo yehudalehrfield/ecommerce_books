@@ -4,7 +4,7 @@ import { urlFor } from '../lib/client'
 
 const FooterBanner = (
   {footerBanner : 
-  {discount,largeText1,largeText2,saleTime,smallText,midText, product, buttonText,image,desc}}
+    {discount,largeText1,largeText2,saleTime,smallText,midText, product, buttonText,image,desc}}
   ) => {
   return (
     <div className='footer-banner-container'>
@@ -19,7 +19,7 @@ const FooterBanner = (
           <p id='title'>{smallText}</p>
           <p>{midText}</p>
           <p>{desc}</p>
-          <Link href = {`/product/${product}`}>
+          <Link href={`/product/${product}`}>
             <button type = "button">{buttonText}</button>
           </Link>
         </div>

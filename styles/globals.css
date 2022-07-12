@@ -151,7 +151,6 @@ width: 100%;
   height: 500px;
   line-height: 0.9; 
   width: 100%;
-  z-index: -10000;
 
 }
 .hero-banner-container .banner-book-title{
@@ -160,9 +159,10 @@ width: 100%;
   margin-left:45%;
   color:darkblue;
   /* margin-top:120px; */
+  z-index:10;
 }
 .hero-banner-container button{
-   border-radius: 15px;
+  border-radius: 15px;
   padding: 10px 16px;
   /* background-color: #f02d34; */
   background-color: darkblue;
@@ -172,7 +172,7 @@ width: 100%;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  z-index:10000 !important;
+  /* z-index: 10000 !important; */
 }
 
 .hero-banner-container h3{
@@ -182,7 +182,6 @@ width: 100%;
   /* margin-top: 4px; */
   margin-top: 15px;
   margin-left: 45px;
-  /* z-index: 10; */
 }
 .hero-banner-container h1{
   /* color: white; */
@@ -193,7 +192,6 @@ width: 100%;
   margin-left: -15px;
   text-transform: uppercase;
   margin-top: 10px;
-  /* z-index: 10; */
 }
 .hero-banner-image{
   position: absolute;
@@ -201,7 +199,7 @@ width: 100%;
   right:15%;
   width: 350px;
   height: 450px;
-  z-index: -5;
+  opacity: 0.85;
 }
 
 .desc{
@@ -712,11 +710,27 @@ padding: 30px 65px;
   .hero-banner-container{
     height: 560px;
   }
+  .hero-banner-container{
+    line-height: 1.3;
+  }
   .hero-banner-image{
     width: 77%;
     height: 62%;
     top: -2%;
     right: -6%;
+  }
+  .hero-banner-container h1{
+    font-size: 50px;
+  }
+ .hero-banner-container h3{
+    font-size: 40px;
+  }
+  /* .hero-banner-container button{
+    margin-top: 90px;
+    z-index: 10000 !important;
+  } */
+  .desc{
+   bottom: 60px;
   }
   .footer-banner-container{
     height: 560px;
@@ -748,22 +762,6 @@ padding: 30px 65px;
   .banner-desc{
     flex-wrap: wrap;
     gap: 20px;
-  }
-  .hero-banner-container{
-    line-height: 1.3;
-  }
-  .hero-banner-container h1{
-    font-size: 50px;
-  }
- .hero-banner-container h3{
-    font-size: 40px;
-  }
-  .hero-banner-container button{
-    margin-top: 90px;
-    z-index: 10000;
-  }
-  .desc{
-   bottom: 60px;
   }
   .product-detail-container{
     flex-wrap: wrap;
